@@ -25,6 +25,14 @@ const PrimaryInboxPage = () => {
             LinkedIn Job Alerts..
           </p>
         </div>
+        <div className=" truncate flex-1 pl-[55px]">
+          <p className="text-[13.5px] text-gray-500 font-medium truncate">
+            The height at which great men reach today was not attained by sudden
+            flight....
+          </p>
+        </div>
+
+        <p className="text-xs text-black font-semibold pr-2">2:54 PM</p>
       </div>
     </div>
   );

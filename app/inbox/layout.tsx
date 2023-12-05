@@ -49,7 +49,7 @@ const InboxRouteLayout = ({ children }: { children: React.ReactNode }) => {
         <ul className="flex flex-wrap -mb-px">
           <Link
             href="/inbox/primary"
-            className="border-b-[3px] mr-2 py-2 border-blue-700 flex items-center justify- w-52 hover:bg-gray-500 hover:bg-opacity-10"
+            className="border-b-[3px] mr-2 py-2 border-blue-700 flex items-center justify- w-64 hover:bg-gray-500 hover:bg-opacity-10"
           >
             <li className="flex items-center gap-3 pl-4">
               <MdInbox className="w-5 h-5" />
@@ -59,7 +59,7 @@ const InboxRouteLayout = ({ children }: { children: React.ReactNode }) => {
 
           <Link
             href="/inbox/social"
-            className="flex items-center mr-2 py-2 justify-start pl-6 min-w-[208px] hover:bg-gray-500 hover:bg-opacity-10"
+            className="flex items-center mr-2 py-2 justify-start px-6 w-64 hover:bg-gray-500 hover:bg-opacity-10"
           >
             <li className="flex items-center gap-3">
               <BsTag className="w-5 h-5" />
@@ -84,7 +84,7 @@ const InboxRouteLayout = ({ children }: { children: React.ReactNode }) => {
 
           <Link
             href="/inbox/social"
-            className="flex items-center mr-2 py-2 justify-start pl-10 min-w-[208px] hover:bg-gray-500 hover:bg-opacity-10"
+            className="flex items-center mr-2 py-2 justify-start px-6 w-64 hover:bg-gray-500 hover:bg-opacity-10"
           >
             <li className="flex items-center gap-3">
               <LuUsers className="w-5 h-5" />
