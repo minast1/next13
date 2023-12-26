@@ -8,48 +8,18 @@ import { MdInbox } from "react-icons/md";
 import Link from "next/link";
 import { BsTag } from "react-icons/bs";
 import { LuUsers } from "react-icons/lu";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
 
 const InboxRouteLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="w-full h-full flex flex-col">
-      <div className="flex w-full items-center justify-between px-4">
-        <div className="flex items-center gap-2">
-          <input
-            type="checkbox"
-            value=""
-            className="w-4 h-4 outline-4 border-gray-800 rounded-sm focus:ring-gray-800 text-white"
-          />
-
-          <IconButton
-            className="hover:bg-gray-600 p-2"
-            icon={<MdRefresh className="w-5 h-5 text-gray-800" />}
-          />
-          <IconButton
-            className="hover:bg-gray-600 p-2"
-            icon={<IoMdMore className="w-5 h-5 text-gray-800" />}
-          />
-        </div>
-
-        <div className="flex items-center gap-2">
-          <p className="text-gray-600 text-xs mr-2">1-50 of 11,282</p>
-          <IconButton
-            disabled
-            className="hover:bg-gray-600 p-2"
-            icon={<GrFormPrevious className="w-5 h-5 text-gray-500" />}
-          />
-          <IconButton
-            className="hover:bg-gray-600 p-2"
-            icon={<GrFormNext className="w-5 h-5 text-gray-500" />}
-          />
-        </div>
-      </div>
       {/* Tabs Header here  */}
 
-      <div className="text-[15px] font-medium text-center w-full text-gray-800 border-b border-opacity-50 border-gray-400 mt-5">
+      <div className="text-[15px] font-medium text-center w-full text-gray-800 border-b border-opacity-50 border-gray-400 ">
         <ul className="flex flex-wrap -mb-px">
           <Link
             href="/inbox/primary"
-            className="border-b-[3px] mr-2 py-2 border-blue-700 flex items-center justify- w-64 hover:bg-gray-500 hover:bg-opacity-10"
+            className="border-b-[3px] mr-2 py-2 border-blue-700 flex items-center justify- w-64 hover:rounded-tl-none hover:bg-gray-500 hover:bg-opacity-10"
           >
             <li className="flex items-center gap-3 pl-4">
               <MdInbox className="w-5 h-5" />
