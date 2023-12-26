@@ -39,10 +39,10 @@ export default function RootLayout({
 
         <Sidebar />
         <div className=" ml-[275px] pr-10">
-          <Card className="min-h-fit mb-5 rounded-2xl border-none bg-gray-300">
+          <Card className="min-h-fit mb-5 rounded-2xl border-none bg-gray-300 bg-opacity-90">
             <StickyNav />
             <CardContent
-              className="max-h-[700px] px-0 pb-2 rounded-t-xl overflow-auto"
+              className="max-h-[700px] px-0 pb-2 overflow-auto"
               onScroll={(e) => {
                 if (e.currentTarget.scrollTop > 90) {
                   setScrolled(true);

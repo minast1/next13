@@ -15,7 +15,7 @@ const InboxRouteLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="w-full h-full flex flex-col">
       {/* Tabs Header here  */}
 
-      <div className="text-[15px] font-medium text-center w-full text-gray-800 border-b border-opacity-50 border-gray-400 ">
+      <div className="text-[15px] font-medium text-center w-full text-gray-800 border-b bg-gray-300 bg-opacity-60 border-opacity-50 border-gray-400 ">
         <ul className="flex flex-wrap -mb-px">
           <Link
             href="/inbox/primary"

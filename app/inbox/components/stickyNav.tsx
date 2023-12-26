@@ -13,7 +13,12 @@ import useScrollStore from "@/stores/scrollStore";
 const StickyNav = () => {
   const isScrolled = useScrollStore((state) => state.isScrolled);
   return (
-    <CardHeader className={cn("flex flex-col", isScrolled && "shadow-md")}>
+    <CardHeader
+      className={cn(
+        "flex flex-col bg-gray-300 rounded-t-xl bg-opacity-60",
+        isScrolled && "shadow-md"
+      )}
+    >
       <div className="flex w-full items-center justify-between z-50 px-3 top-0 sticky">
         <div className="flex items-center gap-2">
           <input
